@@ -2,8 +2,8 @@ import React from 'react';
 
 import {StatusBar} from 'react-native';
 import {ThemeProvider} from 'styled-components/native';
-import { AuthProvider } from './hooks';
-import { SafeArea, theme } from './styles';
+import {AuthProvider} from './hooks';
+import {SafeArea, theme} from './styles';
 import Routes from './routes';
 
 const Providers: React.FC<React.PropsWithChildren> = ({children}) => (
@@ -15,12 +15,12 @@ const Providers: React.FC<React.PropsWithChildren> = ({children}) => (
 );
 
 const App: React.FC<React.PropsWithChildren> = ({children}) => {
-    return (
-      <SafeArea>
-        <StatusBar barStyle="light-content" backgroundColor="#131313" />
-        <Providers>{children}</Providers>
-      </SafeArea>
-    );
-  };
+  return (
+    <SafeArea>
+      <StatusBar barStyle="light-content" backgroundColor="#131313" />
+      <Providers>{children}</Providers>
+    </SafeArea>
+  );
+};
 
 export default App;

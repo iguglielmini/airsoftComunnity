@@ -8,6 +8,8 @@ import {HomeRoutes} from './home.routes';
 
 const Routes: React.FC<React.PropsWithChildren> = () => {
   const {logged} = useAuth();
+
+  console.log('xolinha', logged);
   return (
     <NavigationContainer>
       {!logged && <AppRoutes />}

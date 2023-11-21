@@ -28,6 +28,4 @@ export default {
     WHITE: '#FFF',
     WHITE_F3: '#f3f3f3',
   },
-  error: {
-  },
 };

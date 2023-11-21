@@ -8,3 +8,7 @@ export const Content = styled(View)`
   border-radius: 8px;
   background-color: ${theme.colors.background.BLACK_500};
 `;
+
+export const ImageCard = styled(Image)``;
+
+export const Title = styled(Text)``;

@@ -1,5 +1,5 @@
 import {theme} from '@/styles';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import styled from 'styled-components/native';
 
 export const Container = styled(View)`
@@ -19,4 +19,13 @@ export const ContentIntroText = styled(View)`
 export const IntroText = styled(Text)`
   font-size: 18px;
   color: ${theme.colors.common.WHITE};
+`;
+
+export const BoxH = styled(ScrollView)`
+  padding-left: 16px;
+  padding-top: 16px;
+`;
+
+export const BoxV = styled(ScrollView)`
+  margin-bottom: 24px;
 `;

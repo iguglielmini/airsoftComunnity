@@ -1,10 +1,10 @@
 import React from 'react';
+import {useNavigation} from '@react-navigation/native';
+import {InputCustom, CustomButton} from '@/components';
 
 import * as S from './styles';
-import {CustomButton, InputCustom} from '@/components';
-import {useNavigation} from '@react-navigation/native';
 
-const Login: React.FC = () => {
+const Forgot: React.FC = () => {
   const {navigate} = useNavigation();
   return (
     <S.Container>
@@ -14,14 +14,13 @@ const Login: React.FC = () => {
       </S.ContentLogo>
       <S.ContentForm>
         <InputCustom type="text" placeholder="Insira seu email..." />
-        <InputCustom type="password" placeholder="Insira sua senha..." />
-        <CustomButton onPress={() => {}} size="lg" title="ENTRAR" />
+        <CustomButton onPress={() => {}} size="lg" title="RESGATAR SENHA" />
         <S.ContentOpt>
           <S.Redirect1 onPress={() => navigate('Register')}>
             <S.SubtitleLogo>Sou novo!</S.SubtitleLogo>
           </S.Redirect1>
-          <S.Redirect1 onPress={() => navigate('Forgot')}>
-            <S.SubtitleLogo>Esqueceu a senha?</S.SubtitleLogo>
+          <S.Redirect1 onPress={() => navigate('Login')}>
+            <S.SubtitleLogo>Login?</S.SubtitleLogo>
           </S.Redirect1>
         </S.ContentOpt>
       </S.ContentForm>
@@ -29,4 +28,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Forgot;

@@ -13,6 +13,9 @@ export const Content = styled(TouchableOpacity)`
 export const ImageCard = styled(Image)`
   height: 100px;
   width: 100%;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 `;
 
 export const Title = styled(Text)`

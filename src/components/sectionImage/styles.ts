@@ -2,10 +2,25 @@ import {theme} from '@/styles';
 import {ImageBackground, Text, View} from 'react-native';
 import styled from 'styled-components/native';
 
-export const Content = styled(ImageBackground)`
+interface ISectionImageProps {
+  sizeHeight: 'lg' | 'md' | 'sm';
+}
+
+export const Content = styled(ImageBackground)<ISectionImageProps>`
   width: 100%;
-  height: 250px;
   justify-content: flex-end;
+  height: ${({sizeHeight}) => {
+    switch (sizeHeight) {
+      case 'lg':
+        return '550px';
+      case 'md':
+        return '450px';
+      case 'sm':
+        return '350px';
+      default:
+        return '250px';
+    }
+  }};
 `;
 
 export const Box = styled(View)`

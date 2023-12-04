@@ -1,16 +1,26 @@
 import React from 'react';
-import {CardEvent, CardProduct, CardStore, SectionImage} from '@/components';
+import {
+  CardEvent,
+  CardProduct,
+  CardStore,
+  Header,
+  SectionImage,
+} from '@/components';
 import * as S from './styles';
 import ImgTest from '@/assets/images/introImage.png';
+import {useNavigation} from '@react-navigation/native';
 
 const Home: React.FC = () => {
+  const {navigate} = useNavigation();
   return (
     <S.Container>
-      <SectionImage
-        title={'Bem-vindo ao AirsoftBR'}
-        subtitle={'Veja a operação e equipamentos perto de você'}
-      />
+      <Header />
       <S.BoxV>
+        <SectionImage
+          sizeHeight="sm"
+          title={'Bem-vindo ao AirsoftBR'}
+          subtitle={'Veja a operação e equipamentos perto de você'}
+        />
         <S.ContentIntroText>
           <S.IntroText>Próximas Operação</S.IntroText>
         </S.ContentIntroText>
@@ -20,7 +30,7 @@ const Home: React.FC = () => {
             locationUF="PB"
             titleEvent="Operação PB 01"
             calendario="26/11/23 - 12:00"
-            detailsPress={() => {}}
+            detailsPress={() => navigate('EventDetails')}
           />
         </S.BoxH>
         {/* anuncios */}

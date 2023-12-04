@@ -4,3 +4,5 @@ export {CardStore} from './cardStore';
 export {CardProduct} from './cardProduct';
 export {CustomButton} from './customButton';
 export {InputCustom} from './inputCustom';
+export {Header} from './header';
+export {CardUser} from './cardUser';

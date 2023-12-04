@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "466967132310",
+    "project_id": "airsoft-5bef0",
+    "storage_bucket": "airsoft-5bef0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466967132310:android:d91c0a2478a3d990c76ab7",
+        "android_client_info": {
+          "package_name": "com.airsoftcommunity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBffxb4rrX3VbgqT6hcdG74qi-EO4BHfAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,8 +12,8 @@ const Routes: React.FC<React.PropsWithChildren> = () => {
   console.log('xolinha', logged);
   return (
     <NavigationContainer>
-      {logged && <AppRoutes />}
-      {!logged && <HomeRoutes />}
+      {!logged && <AppRoutes />}
+      {logged && <HomeRoutes />}
     </NavigationContainer>
   );
 };

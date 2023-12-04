@@ -27,5 +27,6 @@ export const BoxH = styled(ScrollView)`
 `;
 
 export const BoxV = styled(ScrollView)`
+  margin-top: -30px;
   margin-bottom: 24px;
 `;

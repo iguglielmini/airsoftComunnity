@@ -19,15 +19,15 @@ const CardEvent: React.FC<ICardEventProps> = ({
   detailsPress,
 }) => {
   return (
-    <S.Content onPress={() => {}}>
+    <S.Content onPress={detailsPress}>
       <S.ImageCard source={require('@/assets/images/introImage.png')} />
       <S.Title>{titleEvent}</S.Title>
       <S.Box>
-        <Icon size={20} name="calendar" color="#900" />
+        <Icon size={12} name="calendar" color="#900" />
         <S.InfoText>{calendario}</S.InfoText>
       </S.Box>
       <S.Box>
-        <Icon size={20} name="calendar" color="#900" />
+        <Icon size={12} name="calendar" color="#900" />
         <S.InfoText>{locationUF}</S.InfoText>
       </S.Box>
       <S.Link>Saiba mais</S.Link>

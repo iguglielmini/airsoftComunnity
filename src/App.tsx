@@ -17,7 +17,7 @@ const Providers: React.FC<React.PropsWithChildren> = ({children}) => (
 const App: React.FC<React.PropsWithChildren> = ({children}) => {
   return (
     <SafeArea>
-      <StatusBar barStyle="light-content" backgroundColor="#131313" />
+      <StatusBar barStyle="dark-content" backgroundColor="#131313" />
       <Providers>{children}</Providers>
     </SafeArea>
   );

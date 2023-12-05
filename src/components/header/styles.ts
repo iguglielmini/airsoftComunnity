@@ -10,8 +10,6 @@ export const Content = styled(ImageBackground)`
   background-color: ${theme.colors.background.SECOND};
   justify-content: space-between;
   padding: 24px 16px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
   z-index: 9999;
 `;
 

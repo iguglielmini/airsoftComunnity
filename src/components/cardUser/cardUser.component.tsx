@@ -1,15 +1,8 @@
 import React from 'react';
-import {View} from 'react-native';
 
 import ExampleImg from '@/assets/images/introImage.png';
 import * as S from './styles';
-
-interface ICardUser {
-  name?: string;
-  type?: string;
-  image?: string;
-  hasInfoUser?: boolean;
-}
+import {ICardUser} from '@/types';
 
 const cardUser: React.FC<ICardUser> = ({name, type, image, hasInfoUser}) => {
   return (

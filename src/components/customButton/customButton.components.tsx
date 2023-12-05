@@ -1,14 +1,7 @@
 import React from 'react';
 
 import * as S from './styles';
-
-interface ButtonProps {
-  onPress: () => void;
-  title: string;
-  color?: string;
-  borderColor?: string;
-  size: 'lg' | 'sm' | 'xs';
-}
+import {ButtonProps} from 'react-native';
 
 const CustomButton: React.FC<ButtonProps> = ({onPress, title, size}) => {
   return (

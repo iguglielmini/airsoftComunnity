@@ -6,11 +6,7 @@ import {theme} from '@/styles';
 import * as S from './styles';
 import ExampleImg from '@/assets/images/introImage.png';
 import {useNavigation} from '@react-navigation/native';
-
-interface IHeaderProps {
-  gobackIcon?: boolean;
-  title?: string;
-}
+import {IHeaderProps} from '@/types';
 
 const Header: React.FC<IHeaderProps> = ({
   gobackIcon,

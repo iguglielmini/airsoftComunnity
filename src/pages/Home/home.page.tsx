@@ -5,6 +5,7 @@ import {
   CardStore,
   Header,
   SectionImage,
+  TextIntro,
 } from '@/components';
 import * as S from './styles';
 import ImgTest from '@/assets/images/introImage.png';
@@ -21,9 +22,7 @@ const Home: React.FC = () => {
           title={'Bem-vindo ao AirsoftBR'}
           subtitle={'Veja a operação e equipamentos perto de você'}
         />
-        <S.ContentIntroText>
-          <S.IntroText>Próximas Operação</S.IntroText>
-        </S.ContentIntroText>
+        <TextIntro title="Próximos eventos" hasList />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
           <CardEvent
             image={ImgTest}
@@ -34,9 +33,7 @@ const Home: React.FC = () => {
           />
         </S.BoxH>
         {/* anuncios */}
-        <S.ContentIntroText>
-          <S.IntroText>Anuncios de Produtos</S.IntroText>
-        </S.ContentIntroText>
+        <TextIntro title="Produtos a venda" hasList />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
           <CardProduct
             image={ImgTest}
@@ -45,9 +42,7 @@ const Home: React.FC = () => {
           />
         </S.BoxH>
         {/* Lojas proximas */}
-        <S.ContentIntroText>
-          <S.IntroText>Lojas próximas</S.IntroText>
-        </S.ContentIntroText>
+        <TextIntro title="Lojas mais proximas" hasList />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
           <CardStore
             image={ImgTest}

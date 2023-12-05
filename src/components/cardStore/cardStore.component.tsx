@@ -4,16 +4,7 @@ import {Linking} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import * as S from './styles';
 import maskPhone from '@/utils/maskPhone';
-
-interface ICardEventProps {
-  image?: string;
-  titleEvent: string;
-  endereco: string;
-  telefone: string;
-  wpp: string;
-  detailsPress?: () => void;
-  mapsOpen?: () => void;
-}
+import {ICardEventProps} from '@/types';
 
 const CardStore: React.FC<ICardEventProps> = ({
   wpp,
@@ -39,7 +30,9 @@ const CardStore: React.FC<ICardEventProps> = ({
     // Verifica se o número não está vazio e inicia a conversa
     if (phoneNumber) {
       // Adiciona o código do país, se necessário
-      if (phoneNumber.length === 10) phoneNumber = '55' + phoneNumber; // Exemplo para o Brasil
+      if (phoneNumber.length === 10) {
+        phoneNumber = '55' + phoneNumber;
+      } // Exemplo para o Brasil
 
       const url = `whatsapp://send?phone=${phoneNumber}`;
       Linking.openURL(url).catch(err => console.error('Erro', err));

@@ -2,14 +2,7 @@ import React from 'react';
 
 import Icon from 'react-native-vector-icons/Feather';
 import * as S from './styles';
-
-interface ICardEventProps {
-  image?: string;
-  titleEvent: string;
-  calendario: string;
-  locationUF: string;
-  detailsPress?: () => void;
-}
+import {ICardEventProps} from '@/types';
 
 const CardEvent: React.FC<ICardEventProps> = ({
   image,

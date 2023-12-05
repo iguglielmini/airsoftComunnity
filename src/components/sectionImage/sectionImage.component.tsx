@@ -1,12 +1,7 @@
 import React from 'react';
 
 import * as S from './styles';
-
-interface ISectionImage {
-  title?: string;
-  subtitle?: string;
-  sizeHeight: 'lg' | 'md' | 'sm';
-}
+import {ISectionImage} from '@/types';
 
 const SectionImage: React.FC<ISectionImage> = ({
   title,

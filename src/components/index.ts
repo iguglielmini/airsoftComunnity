@@ -7,3 +7,4 @@ export {InputCustom} from './inputCustom';
 export {Header} from './header';
 export {CardUser} from './cardUser';
 export {FloatButton} from './floatButton';
+export {TextIntro} from './textIntro';

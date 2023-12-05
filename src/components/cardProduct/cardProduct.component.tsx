@@ -1,12 +1,7 @@
 import React from 'react';
 
 import * as S from './styles';
-
-interface ICardEventProps {
-  image?: string;
-  titleEvent: string;
-  detailsPress?: () => void;
-}
+import {ICardEventProps} from '@/types';
 
 const CardProduct: React.FC<ICardEventProps> = ({
   image,

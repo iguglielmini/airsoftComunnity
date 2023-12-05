@@ -2,15 +2,7 @@ import React, {useState} from 'react';
 
 import * as S from './styles';
 import {ActivityIndicator} from 'react-native';
-
-interface IFloatButtonProps {
-  hasParticipant?: boolean;
-  titleButton: string;
-  redirect: () => void;
-  loading?: boolean;
-  date?: string;
-  hour?: string;
-}
+import {IFloatButtonProps} from '@/types';
 
 const FloatButton: React.FC<IFloatButtonProps> = ({
   hasParticipant,

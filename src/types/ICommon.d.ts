@@ -6,13 +6,13 @@ interface ICardEventProps {
   detailsPress?: () => void;
 }
 
-interface ICardEventProps {
+interface ICardProduct {
   image?: string;
   titleEvent: string;
   detailsPress?: () => void;
 }
 
-interface ICardEventProps {
+interface ICardStore {
   image?: string;
   titleEvent: string;
   endereco: string;
@@ -65,8 +65,8 @@ interface ITextIntroProps {
 
 export {
   ICardEventProps,
-  ICardEventProps,
-  ICardEventProps,
+  ICardStore,
+  ICardProduct,
   ICardUser,
   ButtonProps,
   IFloatButtonProps,

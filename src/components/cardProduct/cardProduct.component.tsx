@@ -1,9 +1,9 @@
 import React from 'react';
 
 import * as S from './styles';
-import {ICardEventProps} from '@/types';
+import {ICardProduct} from '@/types';
 
-const CardProduct: React.FC<ICardEventProps> = ({
+const CardProduct: React.FC<ICardProduct> = ({
   image,
   titleEvent,
   detailsPress,

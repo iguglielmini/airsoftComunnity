@@ -4,9 +4,9 @@ import {Linking} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import * as S from './styles';
 import maskPhone from '@/utils/maskPhone';
-import {ICardEventProps} from '@/types';
+import {ICardStore} from '@/types';
 
-const CardStore: React.FC<ICardEventProps> = ({
+const CardStore: React.FC<ICardStore> = ({
   wpp,
   image,
   titleEvent,

@@ -1,5 +1,5 @@
 import {theme} from '@/styles';
-import {View, Text, TouchableOpacity, Button} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components/native';
 

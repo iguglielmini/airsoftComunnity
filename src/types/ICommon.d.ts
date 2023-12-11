@@ -63,6 +63,15 @@ interface ITextIntroProps {
   hasList?: boolean;
 }
 
+interface IEventCardProps {
+  onClick?: () => void;
+  title: string;
+  subtitle: string;
+  date: string;
+  imageCard?: string;
+  cardHorizontal?: boolean;
+}
+
 export {
   ICardEventProps,
   ICardStore,
@@ -73,4 +82,5 @@ export {
   IHeaderProps,
   ISectionImage,
   ITextIntroProps,
+  IEventCardProps,
 };

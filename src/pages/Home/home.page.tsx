@@ -22,7 +22,11 @@ const Home: React.FC = () => {
           title={'Bem-vindo ao AirsoftBR'}
           subtitle={'Veja a operação e equipamentos perto de você'}
         />
-        <TextIntro title="Próximos eventos" hasList />
+        <TextIntro
+          hasList
+          title="Próximos eventos"
+          redirect={() => navigate('Event')}
+        />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
           <CardEvent
             image={ImgTest}

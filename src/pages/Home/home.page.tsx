@@ -46,7 +46,11 @@ const Home: React.FC = () => {
           />
         </S.BoxH>
         {/* Lojas proximas */}
-        <TextIntro title="Lojas mais proximas" hasList />
+        <TextIntro
+          hasList
+          title="Lojas mais proximas"
+          redirect={() => navigate('Store')}
+        />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
           <CardStore
             image={ImgTest}
@@ -54,7 +58,7 @@ const Home: React.FC = () => {
             titleEvent="Montana Airsoft"
             telefone="83999604027"
             wpp="83999604027"
-            detailsPress={() => {}}
+            detailsPress={() => navigate('StoreDetails')}
           />
         </S.BoxH>
       </S.BoxV>

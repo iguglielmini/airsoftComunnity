@@ -9,12 +9,20 @@ const CardProduct: React.FC<ICardProduct> = ({
   detailsPress,
 }) => {
   return (
-    // <S.Content onPress={() => {}}>
-    <S.ImageCard source={require('@/assets/images/introImage.png')}>
-      <S.Title>{titleEvent}</S.Title>
-      <S.Link>Saiba mais</S.Link>
-    </S.ImageCard>
-    // </S.Content>
+    <S.ImageButton onPress={detailsPress}>
+      <S.ImageCard imageStyle={{borderRadius: 10}} source={image}>
+        <S.Content
+          colors={['#1E20234D', '#191919CC', '#030303']}
+          locations={[0, 0.3, 1]}>
+          <S.Title>{titleEvent}</S.Title>
+          <S.SubTitle>Nunca usada, com 1 bateria junto...</S.SubTitle>
+          <S.Box>
+            <S.Link>Saiba mais</S.Link>
+            <S.PriceText>R$ 1300,00</S.PriceText>
+          </S.Box>
+        </S.Content>
+      </S.ImageCard>
+    </S.ImageButton>
   );
 };
 

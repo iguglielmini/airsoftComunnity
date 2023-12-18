@@ -40,8 +40,8 @@ const Home: React.FC = () => {
         <TextIntro title="Produtos a venda" hasList />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
           <CardProduct
-            image={ImgTest}
-            titleEvent="Operação PB 01"
+            image={require('@/assets/images/introImage.png')}
+            titleEvent="Sentinel 8 Rossi"
             detailsPress={() => {}}
           />
         </S.BoxH>

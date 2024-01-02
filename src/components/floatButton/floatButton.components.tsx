@@ -31,7 +31,11 @@ const FloatButton: React.FC<IFloatButtonProps> = ({
         locations={[0, 0.3, 1]}>
         <S.ButtonFloat onPress={handlePress}>
           {isLoading ? (
-            <ActivityIndicator size="small" color="#FFFFFF" />
+            <ActivityIndicator
+              testID="ActivityIndicator"
+              size="small"
+              color="#FFFFFF"
+            />
           ) : (
             <S.Title>{buttonText}</S.Title>
           )}

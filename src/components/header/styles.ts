@@ -1,6 +1,11 @@
 import {theme} from '@/styles';
-import {ImageBackground, Text, View, Image} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {
+  ImageBackground,
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import styled from 'styled-components/native';
 
 export const Content = styled(ImageBackground)`

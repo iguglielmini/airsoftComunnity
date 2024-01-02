@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, TouchableOpacity} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 
 import Icon from 'react-native-vector-icons/AntDesign';
 import {theme} from '@/styles';
@@ -17,7 +17,7 @@ const Header: React.FC<IHeaderProps> = ({
     <S.Content>
       <S.Box>
         {gobackIcon ? (
-          <TouchableOpacity onPress={() => goBack()}>
+          <TouchableOpacity testID="goback-icon" onPress={() => goBack()}>
             <Icon
               size={24}
               name="arrowleft"
@@ -26,7 +26,11 @@ const Header: React.FC<IHeaderProps> = ({
           </TouchableOpacity>
         ) : (
           <S.CardUser>
-            <S.ImageUser source={ExampleImg} resizeMode="cover" />
+            <S.ImageUser
+              testID="user-image"
+              source={ExampleImg}
+              resizeMode="cover"
+            />
           </S.CardUser>
         )}
       </S.Box>
@@ -34,7 +38,10 @@ const Header: React.FC<IHeaderProps> = ({
         <S.Title>{title}</S.Title>
       </S.Box>
       <S.Box>
-        <TouchableOpacity onPress={() => {}} style={{paddingLeft: 10}}>
+        <TouchableOpacity
+          testID="notification-icon"
+          onPress={() => {}}
+          style={{paddingLeft: 10}}>
           <Icon
             size={24}
             name="notification"

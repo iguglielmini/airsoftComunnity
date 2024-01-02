@@ -11,6 +11,7 @@ const SectionImage: React.FC<ISectionImage> = ({
   return (
     <S.Content
       sizeHeight={sizeHeight}
+      testID="content"
       source={require('@/assets/images/intro2.png')}>
       <S.Box>
         <S.Title>{title}</S.Title>

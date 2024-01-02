@@ -8,7 +8,11 @@ const cardUser: React.FC<ICardUser> = ({name, type, image, hasInfoUser}) => {
   return (
     <S.Container>
       <S.CardUser>
-        <S.ImageUser source={ExampleImg} resizeMode="cover" />
+        <S.ImageUser
+          testID="ImageUser"
+          source={ExampleImg}
+          resizeMode="cover"
+        />
       </S.CardUser>
       {hasInfoUser && (
         <S.Box>

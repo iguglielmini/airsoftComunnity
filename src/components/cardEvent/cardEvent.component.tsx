@@ -12,7 +12,7 @@ const CardEvent: React.FC<ICardEventProps> = ({
   detailsPress,
 }) => {
   return (
-    <S.Content onPress={detailsPress}>
+    <S.Content testID="Content" onPress={detailsPress}>
       <S.ImageCard source={require('@/assets/images/introImage.png')} />
       <S.Title>{titleEvent}</S.Title>
       <S.Box>

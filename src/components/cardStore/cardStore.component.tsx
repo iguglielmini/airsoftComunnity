@@ -24,15 +24,11 @@ const CardStore: React.FC<ICardStore> = ({
   };
 
   const openWhatsApp = (number: string) => {
-    // Limpa o número para garantir que esteja no formato correto
     let phoneNumber = number.replace(/[^\d]/g, '');
-
-    // Verifica se o número não está vazio e inicia a conversa
     if (phoneNumber) {
-      // Adiciona o código do país, se necessário
       if (phoneNumber.length === 10) {
         phoneNumber = '55' + phoneNumber;
-      } // Exemplo para o Brasil
+      }
 
       const url = `whatsapp://send?phone=${phoneNumber}`;
       Linking.openURL(url).catch(err => console.error('Erro', err));

@@ -9,7 +9,7 @@ const CardProduct: React.FC<ICardProduct> = ({
   detailsPress,
 }) => {
   return (
-    <S.ImageButton onPress={detailsPress}>
+    <S.ImageButton testID="ImageButton" onPress={detailsPress}>
       <S.ImageCard imageStyle={{borderRadius: 10}} source={image}>
         <S.Content
           colors={['#1E20234D', '#191919CC', '#030303']}

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">6.25% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/16</span>
+                <span class='fraction'>4/16</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>1/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">6.66% </span>
+                <span class="strong">26.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/15</span>
+                <span class='fraction'>4/15</span>
             </div>
         
             
@@ -124,11 +124,7 @@
 <a name='L59'></a><a href='#L59'>59</a>
 <a name='L60'></a><a href='#L60'>60</a>
 <a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L62'></a><a href='#L62'>62</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,7 +132,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,7 +141,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -153,13 +149,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,7 +161,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -201,7 +193,7 @@ import * as S from './styles';
 import maskPhone from '@/utils/maskPhone';
 import {ICardStore} from '@/types';
 &nbsp;
-const CardStore: React.FC&lt;ICardStore&gt; = <span class="fstat-no" title="function not covered" >({</span>
+const CardStore: React.FC&lt;ICardStore&gt; = ({
   wpp,
   image,
   titleEvent,
@@ -210,7 +202,7 @@ const CardStore: React.FC&lt;ICardStore&gt; = <span class="fstat-no" title="func
   detailsPress,
   mapsOpen,
 }) =&gt; {
-  const makePhoneCall = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>honeNumber: string) =&gt; {</span>
+  const makePhoneCall = <span class="fstat-no" title="function not covered" >(p</span>honeNumber: string) =&gt; {
 <span class="cstat-no" title="statement not covered" >    if (phoneNumber) {</span>
 <span class="cstat-no" title="statement not covered" >      Linking.openURL(`tel:${phoneNumber}`).catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt;</span>
 <span class="cstat-no" title="statement not covered" >        console.error('Erro ao abrir o discador', err),</span>
@@ -218,23 +210,19 @@ const CardStore: React.FC&lt;ICardStore&gt; = <span class="fstat-no" title="func
     }
   };
 &nbsp;
-  const openWhatsApp = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(n</span>umber: string) =&gt; {</span>
-    // Limpa o número para garantir que esteja no formato correto
+  const openWhatsApp = <span class="fstat-no" title="function not covered" >(n</span>umber: string) =&gt; {
     let phoneNumber = <span class="cstat-no" title="statement not covered" >number.replace(/[^\d]/g, '');</span>
-&nbsp;
-    // Verifica se o número não está vazio e inicia a conversa
 <span class="cstat-no" title="statement not covered" >    if (phoneNumber) {</span>
-      // Adiciona o código do país, se necessário
 <span class="cstat-no" title="statement not covered" >      if (phoneNumber.length === 10) {</span>
 <span class="cstat-no" title="statement not covered" >        phoneNumber = '55' + phoneNumber;</span>
-      } // Exemplo para o Brasil
+      }
 &nbsp;
       const url = <span class="cstat-no" title="statement not covered" >`whatsapp://send?phone=${phoneNumber}`;</span>
 <span class="cstat-no" title="statement not covered" >      Linking.openURL(url).catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >console.error('Erro', err))</span>;</span>
     }
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;S.Content&gt;
       &lt;S.ImageCard source={image} /&gt;
       &lt;S.Title&gt;{titleEvent}&lt;/S.Title&gt;
@@ -265,7 +253,7 @@ export default CardStore;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-01-02T19:38:40.210Z
+                at 2024-01-02T19:59:01.579Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

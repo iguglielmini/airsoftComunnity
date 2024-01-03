@@ -9,6 +9,7 @@
     "test": "jest --silent --coverage --watchAll=false --maxWorkers=50%",
     "testw": "jest --silent --coverage --watch",
     "test-clear": "jest --clearCache",
+    "stryker": "stryker run",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
@@ -37,6 +38,9 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@stryker-mutator/core": "^8.0.0",
+    "@stryker-mutator/jest-runner": "^8.0.0",
+    "@stryker-mutator/typescript": "^4.0.0",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/react-native": "^12.4.3",

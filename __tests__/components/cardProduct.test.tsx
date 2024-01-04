@@ -1,39 +1,39 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
-import {CardEvent} from '../src/components';
-describe('CardEvent', () => {
-  const mockTitleEvent = 'Test Event';
-  const mockCalendario = '01/01/2024';
-  const mockLocationUF = 'Test Location';
+import {CardProduct} from '../../src/components'; // Ajuste o caminho do import conforme necessário
+
+describe('CardProduct', () => {
+  const mockTitleEvent = 'Test Product';
   const mockDetailsPress = jest.fn();
+  const mockImage = {
+    uri: 'https://dcdn.mitiendanube.com/stores/001/125/497/products/qgk1105-11-7b7da24e72a6cf280615856615277447-480-0.jpg',
+  };
 
   it('renders correctly', () => {
     const {getByText} = render(
-      <CardEvent
+      <CardProduct
         titleEvent={mockTitleEvent}
-        calendario={mockCalendario}
-        locationUF={mockLocationUF}
         detailsPress={mockDetailsPress}
+        image={mockImage}
       />,
     );
 
     expect(getByText(mockTitleEvent)).toBeTruthy();
-    expect(getByText(mockCalendario)).toBeTruthy();
-    expect(getByText(mockLocationUF)).toBeTruthy();
+    expect(getByText('Nunca usada, com 1 bateria junto...')).toBeTruthy();
     expect(getByText('Saiba mais')).toBeTruthy();
+    expect(getByText('R$ 1300,00')).toBeTruthy();
   });
 
   it('calls detailsPress when pressed', () => {
     const {getByTestId} = render(
-      <CardEvent
+      <CardProduct
         titleEvent={mockTitleEvent}
-        calendario={mockCalendario}
-        locationUF={mockLocationUF}
         detailsPress={mockDetailsPress}
+        image={mockImage}
       />,
     );
 
-    fireEvent.press(getByTestId('Content'));
+    fireEvent.press(getByTestId('ImageButton'));
     expect(mockDetailsPress).toHaveBeenCalled();
   });
 });

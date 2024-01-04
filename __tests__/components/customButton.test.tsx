@@ -1,6 +1,6 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
-import {CustomButton} from '../src/components'; // Ajuste o caminho do import conforme necessário
+import {CustomButton} from '../../src/components'; // Ajuste o caminho do import conforme necessário
 
 describe('CustomButton', () => {
   const mockOnPress = jest.fn();

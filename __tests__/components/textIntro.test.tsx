@@ -1,6 +1,6 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
-import {TextIntro} from '../src/components';
+import {TextIntro} from '../../src/components';
 
 describe('TextIntro', () => {
   it('renders the title correctly', () => {

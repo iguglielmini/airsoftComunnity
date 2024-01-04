@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {InputCustom} from '../src/components'; // Ajuste o caminho do import conforme necessário
+import {InputCustom} from '../../src/components'; // Ajuste o caminho do import conforme necessário
 
 describe('InputCustom', () => {
   it('renders correctly', () => {

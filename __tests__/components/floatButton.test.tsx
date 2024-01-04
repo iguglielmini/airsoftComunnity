@@ -1,6 +1,6 @@
 import React from 'react';
 import {render, fireEvent, act} from '@testing-library/react-native';
-import {FloatButton} from '../src/components'; // Ajuste o caminho do import conforme necessário
+import {FloatButton} from '../../src/components'; // Ajuste o caminho do import conforme necessário
 
 describe('FloatButton', () => {
   it('renders correctly with initial props', () => {

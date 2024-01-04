@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {CardUser} from '../src/components'; // Ajuste o caminho do import conforme necessário
+import {CardUser} from '../../src/components'; // Ajuste o caminho do import conforme necessário
 
 describe('CardUser', () => {
   const mockName = 'John Doe';

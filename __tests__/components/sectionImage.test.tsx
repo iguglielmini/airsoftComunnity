@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import {SectionImage} from '../src/components';
+import {SectionImage} from '../../src/components';
 
 describe('SectionImage', () => {
   it('renderiza corretamente sem título e subtítulo', () => {

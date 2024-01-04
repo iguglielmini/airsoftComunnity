@@ -14,7 +14,7 @@ const EventCard: React.FC<IEventCardProps> = ({
   return (
     <>
       {cardHorizontal ? (
-        <S.Content onPress={onClick}>
+        <S.Content testID="ContentHorizontal" onPress={onClick}>
           <S.ContentImage imageStyle={{borderRadius: 10}} source={imageCard}>
             <S.Box>
               <S.Badge>
@@ -30,7 +30,7 @@ const EventCard: React.FC<IEventCardProps> = ({
           </S.ContentImage>
         </S.Content>
       ) : (
-        <S.ContentCardList onPress={onClick}>
+        <S.ContentCardList testID="ContentVertical" onPress={onClick}>
           <S.CardVertical>
             <S.CardImg source={imageCard} />
             <S.InfoBoxText>

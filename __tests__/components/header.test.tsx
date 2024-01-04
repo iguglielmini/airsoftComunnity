@@ -3,7 +3,7 @@ import {render, fireEvent} from '@testing-library/react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {useNavigation} from '@react-navigation/native';
 
-import {Header} from '../src/components';
+import {Header} from '../../src/components';
 import ExampleImg from '../../src/assets/images/intro2.png';
 
 jest.mock('@react-navigation/native', () => {

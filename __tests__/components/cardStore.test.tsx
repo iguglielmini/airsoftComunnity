@@ -1,6 +1,6 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
-import {CardStore} from '../src/components'; // Ajuste o caminho do import conforme necessário
+import {CardStore} from '../../src/components'; // Ajuste o caminho do import conforme necessário
 import * as Linking from 'react-native';
 
 jest.mock('react-native/Libraries/Settings/Settings', () => {
@@ -11,7 +11,9 @@ jest.mock('react-native/Libraries/Settings/Settings', () => {
 });
 
 describe('CardStore', () => {
-  const mockImage = {uri: 'https://example.com/test.jpg'};
+  const mockImage = {
+    uri: 'https://dcdn.mitiendanube.com/stores/001/125/497/products/qgk1105-11-7b7da24e72a6cf280615856615277447-480-0.jpg',
+  };
   const mockTitleEvent = 'Test Store';
   const mockEndereco = 'Test Address';
   const mockTelefone = '1234567890';

@@ -21,8 +21,8 @@ export const Box = styled(View)`
 `;
 
 export const Badge = styled(View)`
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   align-items: center;
@@ -63,7 +63,7 @@ export const InfoText = styled(Text)`
 export const InfoTextSub = styled(Text)`
   font-size: 14px;
   color: ${theme.colors.common.WHITE};
-  text-transform: uppercase;
+  word-break: break-all;
   font-weight: 400;
 `;
 
@@ -73,15 +73,15 @@ export const ContentCardList = styled(TouchableOpacity)`
 
 export const CardVertical = styled(View)`
   width: 100%;
-  height: 80px;
+  height: 100px;
   border-radius: 8px;
   flex-direction: row;
   background-color: ${theme.colors.background.BLACK_500};
 `;
 
 export const CardImg = styled(Image)`
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: red;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -89,4 +89,6 @@ export const CardImg = styled(Image)`
 
 export const InfoBoxText = styled(View)`
   padding: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
 `;

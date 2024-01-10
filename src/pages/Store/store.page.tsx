@@ -6,7 +6,7 @@ import {StoreCard} from './components';
 
 import * as S from './styles';
 import {FlatList, View} from 'react-native';
-import {eventData} from '@/mocks/events.mock';
+import {storeData} from '@/mocks/store.mock';
 import {IEventCardProps} from '@/types';
 
 const Store: React.FC = () => {
@@ -43,7 +43,7 @@ const Store: React.FC = () => {
           <View>
             <FlatList
               horizontal
-              data={eventData}
+              data={storeData}
               renderItem={renderItem}
               keyExtractor={item => item.title}
             />
@@ -53,7 +53,7 @@ const Store: React.FC = () => {
         <S.SectionCard>
           <S.TextSection>Todas as lojas</S.TextSection>
           <FlatList
-            data={eventData}
+            data={storeData}
             renderItem={listRenderItem}
             keyExtractor={item => item.title}
           />

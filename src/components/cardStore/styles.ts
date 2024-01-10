@@ -36,7 +36,7 @@ export const InfoText = styled(Text)`
   font-size: 10px;
   color: ${theme.colors.common.WHITE};
   padding-left: 6px;
-  padding-right: 8px;
+  padding-right: 18px;
 `;
 
 export const ButtonLink = styled(TouchableOpacity)`

@@ -42,11 +42,7 @@ const Header: React.FC<IHeaderProps> = ({
           testID="notification-icon"
           onPress={() => {}}
           style={{paddingLeft: 10}}>
-          <Icon
-            size={24}
-            name="notification"
-            color={theme.colors.common.WHITE}
-          />
+          <Icon size={24} name="bells" color={theme.colors.common.WHITE} />
         </TouchableOpacity>
       </S.Box>
     </S.Content>

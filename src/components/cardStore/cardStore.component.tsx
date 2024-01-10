@@ -40,15 +40,15 @@ const CardStore: React.FC<ICardStore> = ({
       <S.ImageCard source={image} />
       <S.Title>{titleEvent}</S.Title>
       <S.ButtonLink onPress={mapsOpen}>
-        <Icon size={20} name="calendar" />
+        <Icon size={20} name="calendar" color="#FFF" />
         <S.InfoText>{endereco}</S.InfoText>
       </S.ButtonLink>
       <S.ButtonLink onPress={() => telefone && makePhoneCall(telefone)}>
-        <Icon size={20} name="calendar" />
+        <Icon size={20} name="calendar" color="#FFF" />
         <S.InfoText>{maskPhone(telefone)}</S.InfoText>
       </S.ButtonLink>
       <S.ButtonLink onPress={() => wpp && openWhatsApp(wpp)}>
-        <Icon size={20} name="calendar" />
+        <Icon size={20} name="calendar" color="#FFF" />
         <S.InfoText>{maskPhone(wpp)}</S.InfoText>
       </S.ButtonLink>
       <S.ButtonLink onPress={detailsPress}>

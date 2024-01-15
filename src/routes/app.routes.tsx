@@ -11,6 +11,7 @@ import {
   Store,
   StoreDetails,
   Settings,
+  Forum,
 } from '@/pages';
 import {useTheme} from 'styled-components';
 
@@ -19,7 +20,7 @@ const Tab = createBottomTabNavigator();
 
 const HomeStack = () => (
   <Stack.Navigator screenOptions={{headerShown: false}}>
-    <Stack.Screen name="Home" component={Home} />
+    <Stack.Screen name="MainHome" component={Home} />
   </Stack.Navigator>
 );
 
@@ -40,6 +41,12 @@ const StoreStack = () => (
 const SettingsStack = () => (
   <Stack.Navigator screenOptions={{headerShown: false}}>
     <Stack.Screen name="Settings" component={Settings} />
+  </Stack.Navigator>
+);
+
+const ForumStack = () => (
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="MainForum" component={Forum} />
   </Stack.Navigator>
 );
 
@@ -84,12 +91,12 @@ const AppRoutes = () => {
         }}
       />
       <Tab.Screen
-        name="Settings"
-        component={SettingsStack}
+        name="Forum"
+        component={ForumStack}
         options={{
-          tabBarLabel: 'Gerais',
+          tabBarLabel: 'Fóruns',
           tabBarIcon: ({color, size}) => (
-            <Icon name="tool" size={size} color={color} />
+            <Icon name="message1" size={size} color={color} />
           ),
         }}
       />

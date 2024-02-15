@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {useNavigation} from '@react-navigation/native';
 
 import {Header} from '../src/components';
-import ExampleImg from '../../src/assets/images/intro2.png';
+import ExampleImg from '../src/assets/images/introImage.png';
 
 jest.mock('@react-navigation/native', () => {
   const actualNav = jest.requireActual('@react-navigation/native');

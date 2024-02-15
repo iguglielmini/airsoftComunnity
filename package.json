@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest --silent --coverage --watchAll=false --maxWorkers=50%",
+    "test": "jest --silent --coverage  --maxWorkers=50%",
     "testw": "jest --silent --coverage --watch",
     "test-clear": "jest --clearCache",
     "stryker": "stryker run",

@@ -12,7 +12,7 @@ const Header: React.FC<IHeaderProps> = ({
   gobackIcon,
   title = 'Airsoft Community',
 }) => {
-  const {goBack} = useNavigation();
+  const {goBack, navigate} = useNavigation();
   return (
     <S.Content>
       <S.Box>
@@ -25,7 +25,7 @@ const Header: React.FC<IHeaderProps> = ({
             />
           </TouchableOpacity>
         ) : (
-          <S.CardUser>
+          <S.CardUser onPress={() => navigate('Profile')}>
             <S.ImageUser
               testID="user-image"
               source={ExampleImg}

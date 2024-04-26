@@ -9,3 +9,4 @@ export {CardUser} from './cardUser';
 export {FloatButton} from './floatButton';
 export {TextIntro} from './textIntro';
 export {Avatar} from './avatar';
+export {Maps} from './maps';

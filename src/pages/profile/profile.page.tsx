@@ -1,5 +1,5 @@
 import React from 'react';
-import {Avatar, CustomButton, Header, TextIntro} from '@/components';
+import {Avatar, CustomButton, Header, Maps, TextIntro} from '@/components';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {theme} from '@/styles';
 
@@ -15,7 +15,7 @@ const profile: React.FC = () => {
 
       <TextIntro title="Minha Localização" />
       <S.ContainerInfo>
-        <S.Map />
+        <Maps />
       </S.ContainerInfo>
       <S.BoxV>
         <TextIntro title="Meus dados" />

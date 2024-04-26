@@ -20,7 +20,7 @@ export const ContentInfo = styled(View)`
 `;
 
 export const ContentDescribe = styled(View)`
-  padding: 8px 16px;
+  padding-bottom: 8px;
 `;
 
 export const IntroText = styled(Text)`
@@ -31,6 +31,12 @@ export const IntroText = styled(Text)`
 export const IntroSubText = styled(Text)`
   font-size: 12px;
   padding-top: 8px;
+  color: ${theme.colors.common.WHITE};
+`;
+export const TextDescribe = styled(Text)`
+  font-size: 12px;
+  line-height: 18px;
+  padding: 16px;
   color: ${theme.colors.common.WHITE};
 `;
 
@@ -63,6 +69,7 @@ export const ContentGeneralUser = styled(View)`
 export const Divider = styled(View)`
   width: 100%;
   height: 1px;
+  margin-top: 16px;
   background-color: ${theme.colors.primary.MAIN};
 `;
 

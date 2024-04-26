@@ -1,5 +1,4 @@
-import {theme} from '@/styles';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {View} from 'react-native';
 import styled from 'styled-components/native';
 
 export const Container = styled(View)`

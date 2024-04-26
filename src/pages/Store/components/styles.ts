@@ -21,8 +21,9 @@ export const Box = styled(View)`
 `;
 
 export const Badge = styled(View)`
-  width: 40px;
+  /* width: 40px; */
   height: 40px;
+  padding: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   align-items: center;

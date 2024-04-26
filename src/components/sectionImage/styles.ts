@@ -3,7 +3,7 @@ import {ImageBackground, Text, View} from 'react-native';
 import styled from 'styled-components/native';
 
 interface ISectionImageProps {
-  sizeHeight: 'lg' | 'md' | 'sm';
+  sizeHeight: 'lg' | 'md' | 'sm' | 'xs' | 'xxs';
 }
 
 export const Content = styled(ImageBackground)<ISectionImageProps>`
@@ -17,8 +17,12 @@ export const Content = styled(ImageBackground)<ISectionImageProps>`
         return '450px';
       case 'sm':
         return '350px';
-      default:
+      case 'xs':
         return '250px';
+      case 'xxs':
+        return '150px';
+      default:
+        return '150px';
     }
   }};
 `;

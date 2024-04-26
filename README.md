@@ -70,3 +70,5 @@ yarn stryker
 - jest
 - stryker
 - typscript
+- Google maps
+

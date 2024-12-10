@@ -4,7 +4,7 @@ import {TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {theme} from '@/styles';
 import * as S from './styles';
-import ExampleImg from '@/assets/images/introImage.png';
+import ExampleImg from '@/assets/images/team.png';
 import {useNavigation} from '@react-navigation/native';
 import {IHeaderProps} from '@/types';
 

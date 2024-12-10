@@ -31,10 +31,31 @@ export const InfoText = styled(Text)`
   color: ${theme.colors.common.WHITE};
 `;
 
-export const Map = styled(View)`
-  width: 100%;
-  margin-top: 10px;
-  height: 120px;
-  border-radius: 10px;
-  background-color: gray;
+export const ContentStats = styled(View)`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: ${theme.colors.background.SECOND};
+  padding: 24px;
+  border: 1px solid ${theme.colors.primary.MAIN};
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 30px;
+`;
+
+export const StatsTitle = styled(Text)`
+  font-size: 24px;
+  font-weight: bold;
+  color: ${theme.colors.common.WHITE};
+`;
+
+export const StatsText = styled(Text)`
+  font-size: 14px;
+  padding-top: 8px;
+  color: ${theme.colors.common.WHITE};
+`;
+
+export const StatsDiv = styled(View)`
+  flex-direction: column;
+  align-items: center;
 `;

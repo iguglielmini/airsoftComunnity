@@ -49,13 +49,13 @@ export const TextTel = styled(Text)`
 
 export const EditText = styled(Text)`
   font-size: 12px;
-  color: ${theme.colors.primary.MAIN};
+  color: ${theme.colors.common.WHITE};
   font-weight: 400;
   text-align: center;
 `;
 
 export const EditProfile = styled(TouchableOpacity)`
-  border: 1px solid ${theme.colors.primary.MAIN};
+  border: 1px solid ${theme.colors.common.WHITE};
   color: red;
   padding: 10px;
   margin-top: 10px;

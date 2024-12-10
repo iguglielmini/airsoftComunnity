@@ -8,7 +8,7 @@ import {AppProvider} from './src/App.provider';
 const App = () => {
   return (
     <SafeArea>
-      <StatusBar barStyle="dark-content" backgroundColor="#191919" />
+      <StatusBar barStyle="light-content" backgroundColor="#191919" />
       <AppProvider />
     </SafeArea>
   );

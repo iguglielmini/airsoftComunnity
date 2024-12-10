@@ -37,15 +37,13 @@ export const SubTitle = styled(Text)`
 `;
 
 export const CardUser = styled(TouchableOpacity)`
-  width: 40px;
-  height: 40px;
-  border: 1px;
-  border-radius: 8px;
+  width: 60px;
+  height: 60px;
 `;
 
 export const ImageUser = styled(Image)`
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 8px;
   border-color: ${theme.colors.primary.MAIN};
 `;

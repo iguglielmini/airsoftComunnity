@@ -72,6 +72,11 @@ interface IEventCardProps {
   cardHorizontal?: boolean;
 }
 
+interface CheckboxProps {
+  label: string;
+  onValueChange: (value: boolean) => void;
+}
+
 export {
   ICardEventProps,
   ICardStore,
@@ -83,4 +88,5 @@ export {
   ISectionImage,
   ITextIntroProps,
   IEventCardProps,
+  CheckboxProps,
 };

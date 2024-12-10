@@ -3,30 +3,34 @@ import {View, Text, Image, TouchableOpacity} from 'react-native';
 import styled from 'styled-components/native';
 
 export const Content = styled(TouchableOpacity)`
-  width: 150px;
-  height: 225px;
+  width: 350px;
+  height: 150px;
   border-radius: 8px;
   background-color: ${theme.colors.background.BLACK_500};
   margin-right: 8px;
+
+  flex-direction: row;
+  align-items: flex-start;
 `;
 
 export const ImageCard = styled(Image)`
-  height: 100px;
-  width: 100%;
-
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  height: 150px;
+  width: 120px;
+  border-radius: 8px;
 `;
 
 export const Title = styled(Text)`
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  text-align: left;
+  padding-top: 16px;
+  padding-left: 8px;
+  padding-bottom: 16px;
 
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
-  color: ${theme.colors.primary.MAIN};
+  color: ${theme.colors.common.WHITE};
+
+  width: 230px;
 `;
 
 export const Box = styled(View)`
@@ -45,7 +49,9 @@ export const InfoText = styled(Text)`
 export const Link = styled(Text)`
   font-size: 12px;
   text-decoration: underline;
-  color: ${theme.colors.primary.MAIN};
+  color: ${theme.colors.common.WHITE};
   padding-left: 8px;
   padding-top: 8px;
 `;
+
+export const DivInfo = styled(View)``;

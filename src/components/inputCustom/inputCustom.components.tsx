@@ -20,7 +20,7 @@ const InputCustom: React.FC<InputCustomProps> = ({type, ...rest}) => {
   return (
     <S.CustomInput
       {...rest}
-      placeholderTextColor="#fff"
+      placeholderTextColor="#B4B4B4"
       secureTextEntry={secureTextEntry}
       keyboardType={keyboardType}
     />

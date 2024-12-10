@@ -25,6 +25,6 @@ export const ButtonText = styled(TouchableOpacity)`
 
 export const TextButton = styled(Text)`
   font-size: 14px;
-  color: ${theme.colors.primary.MAIN};
+  color: ${theme.colors.common.WHITE};
   text-decoration: underline;
 `;

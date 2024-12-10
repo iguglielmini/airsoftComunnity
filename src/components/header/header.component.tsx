@@ -10,31 +10,31 @@ import {IHeaderProps} from '@/types';
 
 const Header: React.FC<IHeaderProps> = ({
   gobackIcon,
-  title = 'Airsoft Community',
+  title = 'Squad Stryker',
 }) => {
   const {goBack, navigate} = useNavigation();
   return (
     <S.Content>
       <S.Box>
-        {gobackIcon ? (
-          <TouchableOpacity testID="goback-icon" onPress={() => goBack()}>
-            <Icon
-              size={24}
-              name="arrowleft"
-              color={theme.colors.common.WHITE}
-            />
-          </TouchableOpacity>
-        ) : (
-          <S.CardUser onPress={() => navigate('Profile')}>
-            <S.ImageUser
-              testID="user-image"
-              source={ExampleImg}
-              resizeMode="cover"
-            />
-          </S.CardUser>
-        )}
-      </S.Box>
-      <S.Box>
+        <S.Box>
+          {gobackIcon ? (
+            <TouchableOpacity testID="goback-icon" onPress={() => goBack()}>
+              <Icon
+                size={24}
+                name="arrowleft"
+                color={theme.colors.common.WHITE}
+              />
+            </TouchableOpacity>
+          ) : (
+            <S.CardUser onPress={() => navigate('Profile')}>
+              <S.ImageUser
+                testID="user-image"
+                source={ExampleImg}
+                resizeMode="cover"
+              />
+            </S.CardUser>
+          )}
+        </S.Box>
         <S.Title>{title}</S.Title>
       </S.Box>
       <S.Box>

@@ -1,9 +1,9 @@
 export default {
   primary: {
-    MAIN: '#FCD030',
+    MAIN: '#23392e',
   },
   secondary: {
-    MAIN: '#636363',
+    MAIN: '#fff',
   },
   info: {
     WARNING: '#FFAA00',
@@ -27,5 +27,6 @@ export default {
   common: {
     WHITE: '#FFF',
     WHITE_F3: '#f3f3f3',
+    BLACK: '#000',
   },
 };

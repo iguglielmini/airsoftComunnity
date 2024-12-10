@@ -1,5 +1,5 @@
 import {theme} from '@/styles';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Text, TouchableOpacity, View, Image} from 'react-native';
 import styled from 'styled-components/native';
 
 export const Container = styled(View)`
@@ -7,7 +7,6 @@ export const Container = styled(View)`
   align-items: center;
   justify-content: center;
   background-color: ${theme.colors.background.MAIN};
-  padding: 24px;
 `;
 
 export const ContentLogo = styled(View)`
@@ -19,7 +18,9 @@ export const ContentLogo = styled(View)`
 export const TitleLogo = styled(Text)`
   font-size: 32px;
   font-weight: 800;
-  color: ${theme.colors.common.WHITE};
+  text-align: center;
+  padding-bottom: 24px;
+  color: ${theme.colors.primary.MAIN};
 `;
 
 export const SubtitleLogo = styled(Text)`
@@ -31,9 +32,12 @@ export const SubtitleLogo = styled(Text)`
 export const ContentForm = styled(View)`
   display: flex;
   width: 100%;
-  padding-top: 16px;
-  align-items: center;
+  padding: 24px;
   justify-content: flex-start;
+  background-color: white;
+  flex: 1;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 `;
 
 export const ContentOpt = styled(View)`
@@ -41,8 +45,26 @@ export const ContentOpt = styled(View)`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 32px;
 `;
 
-export const Redirect1 = styled(TouchableOpacity)`
-  padding-top: 16px;
+export const Redirect1 = styled(TouchableOpacity)``;
+
+export const LogoTeam = styled(Image)`
+  width: 350px;
+  height: 350px;
+`;
+
+export const RegisterBox = styled(View)`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+`;
+
+export const RegisterText = styled(Text)`
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 8px;
+  color: ${theme.colors.gray.MAIN_4};
 `;

@@ -13,17 +13,19 @@ const CardEvent: React.FC<ICardEventProps> = ({
 }) => {
   return (
     <S.Content testID="Content" onPress={detailsPress}>
-      <S.ImageCard source={require('@/assets/images/introImage.png')} />
-      <S.Title>{titleEvent}</S.Title>
-      <S.Box>
-        <Icon size={12} name="calendar" color="#900" />
-        <S.InfoText>{calendario}</S.InfoText>
-      </S.Box>
-      <S.Box>
-        <Icon size={12} name="calendar" color="#900" />
-        <S.InfoText>{locationUF}</S.InfoText>
-      </S.Box>
-      <S.Link>Saiba mais</S.Link>
+      <S.ImageCard source={image} />
+      <S.DivInfo>
+        <S.Title>{titleEvent}</S.Title>
+        <S.Box>
+          <Icon size={12} name="calendar" color="#900" />
+          <S.InfoText>{calendario}</S.InfoText>
+        </S.Box>
+        <S.Box>
+          <Icon size={12} name="map-pin" color="#900" />
+          <S.InfoText>{locationUF}</S.InfoText>
+        </S.Box>
+        <S.Link>Saiba mais</S.Link>
+      </S.DivInfo>
     </S.Content>
   );
 };

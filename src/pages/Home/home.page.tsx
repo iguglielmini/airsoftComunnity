@@ -1,64 +1,72 @@
 import React from 'react';
-import {
-  CardEvent,
-  CardProduct,
-  CardStore,
-  Header,
-  SectionImage,
-  TextIntro,
-} from '@/components';
+import {BadgeCustom, CardEvent, Header, TextIntro} from '@/components';
 import * as S from './styles';
-import ImgTest from '@/assets/images/introImage.png';
+import ImgTest from '@/assets/images/intro2.png';
+import ImgTest2 from '@/assets/images/introImage.png';
 import {useNavigation} from '@react-navigation/native';
+import TeamLogo from '@/assets/images/team.png';
 
 const Home: React.FC = () => {
   const {navigate} = useNavigation();
   return (
     <S.Container>
       <Header />
+      {/* user info */}
+      <S.ContentUser>
+        <S.ContentUserCard source={TeamLogo} resizeMode="cover" />
+        <S.BoxStatusUserInfo>
+          <S.ContentUserTitle>Bem vindo, Italo Guglielmini</S.ContentUserTitle>
+          <S.StatusUserInfo>
+            <S.ContentUserInfo>OP-01</S.ContentUserInfo>
+            <S.ContentUserInfo>Administrador</S.ContentUserInfo>
+          </S.StatusUserInfo>
+        </S.BoxStatusUserInfo>
+      </S.ContentUser>
       <S.BoxV>
-        <SectionImage
-          sizeHeight="sm"
-          title={'Bem-vindo ao AirsoftBR'}
-          subtitle={'Veja a operação e equipamentos perto de você'}
-        />
-        <TextIntro
-          hasList
-          title="Próximos eventos"
-          redirect={() => navigate('Event')}
-        />
+        {/* accesso rapido */}
+        <S.AccessFastBox>
+          <BadgeCustom
+            label="Manutenção"
+            icon="magazine-pistol"
+            sizerIcon={60}
+            redirect={() => {}}
+          />
+          <BadgeCustom
+            label="Cupons"
+            icon="ticket"
+            sizerIcon={60}
+            redirect={() => {}}
+          />
+          <BadgeCustom
+            label="Lojas parceiras"
+            icon="store"
+            sizerIcon={60}
+            redirect={() => {}}
+          />
+        </S.AccessFastBox>
+        <TextIntro hasList title="Informativos do Squad" />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
           <CardEvent
             image={ImgTest}
             locationUF="PB"
-            titleEvent="Operação PB 01"
+            titleEvent="Arrecadação de Dinheiro para as camisas"
             calendario="26/11/23 - 12:00"
-            detailsPress={() => navigate('EventDetails')}
+            detailsPress={() => navigate('EventDetails' as never)}
           />
         </S.BoxH>
         {/* anuncios */}
-        <TextIntro title="Produtos a venda" hasList />
-        <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
-          <CardProduct
-            image={require('@/assets/images/introImage.png')}
-            titleEvent="Sentinel 8 Rossi"
-            detailsPress={() => {}}
-          />
-        </S.BoxH>
-        {/* Lojas proximas */}
         <TextIntro
           hasList
-          title="Lojas mais proximas"
-          redirect={() => navigate('Store')}
+          title="Operações e Jogos"
+          redirect={() => navigate('Event' as never)}
         />
         <S.BoxH horizontal={true} showsHorizontalScrollIndicator={false}>
-          <CardStore
-            image={ImgTest}
-            endereco="Av. epitacio pessoa, N 4595, tambau - Joao pessoa/Paraiba"
-            titleEvent="Montana Airsoft"
-            telefone="83999604027"
-            wpp="83999604027"
-            detailsPress={() => navigate('StoreDetails')}
+          <CardEvent
+            image={ImgTest2}
+            locationUF="PB"
+            titleEvent="Operação Lockdonw 4"
+            calendario="26/11/23 - 12:00"
+            detailsPress={() => navigate('EventDetails' as never)}
           />
         </S.BoxH>
       </S.BoxV>

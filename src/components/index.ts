@@ -10,3 +10,6 @@ export {FloatButton} from './floatButton';
 export {TextIntro} from './textIntro';
 export {Avatar} from './avatar';
 export {Maps} from './maps';
+export {CheckboxCustom} from './checkbox';
+export {DatePickerCustom} from './datepicker';
+export {BadgeCustom} from './badge';

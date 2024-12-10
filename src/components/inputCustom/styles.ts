@@ -10,5 +10,5 @@ export const CustomInput = styled(TextInput)`
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 16px;
-  color: white;
+  color: ${theme.colors.primary.MAIN};
 `;

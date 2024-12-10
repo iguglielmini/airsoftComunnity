@@ -24,8 +24,9 @@ export const Box = styled(View)`
 `;
 
 export const Title = styled(Text)`
-  color: ${theme.colors.primary.MAIN};
-  font-size: 14px;
+  color: ${theme.colors.common.WHITE};
+  font-size: 18px;
+  padding-left: 8px;
   font-weight: bold;
   text-transform: uppercase;
 `;

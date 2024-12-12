@@ -16,7 +16,7 @@ const Store: React.FC = () => {
     <StoreCard
       cardHorizontal
       date={item.date}
-      onClick={() => navigate('StoreDetails')}
+      onClick={() => navigate('StoreDetails' as never)}
       title={item.title}
       imageCard={item.imageCard}
       subtitle={item.subtitle}
@@ -27,7 +27,7 @@ const Store: React.FC = () => {
     <StoreCard
       cardHorizontal={false}
       date={item.date}
-      onClick={() => navigate('StoreDetails')}
+      onClick={() => navigate('StoreDetails' as never)}
       title={item.title}
       imageCard={item.imageCard}
       subtitle={item.subtitle}
@@ -36,7 +36,7 @@ const Store: React.FC = () => {
 
   return (
     <>
-      <Header title="Lojas de Airsoft" />
+      <Header title="Parceiros" gobackIcon />
       <S.Container>
         <S.SectionCard>
           <S.TextSection>Lojas proximas</S.TextSection>

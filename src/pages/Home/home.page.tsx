@@ -35,13 +35,13 @@ const Home: React.FC = () => {
             label="Cupons"
             icon="ticket"
             sizerIcon={60}
-            redirect={() => {}}
+            redirect={() => navigate('Coupon' as never)}
           />
           <BadgeCustom
-            label="Lojas parceiras"
+            label="Parceiros"
             icon="store"
             sizerIcon={60}
-            redirect={() => {}}
+            redirect={() => navigate('Store' as never)}
           />
         </S.AccessFastBox>
         <TextIntro hasList title="Informativos do Squad" />

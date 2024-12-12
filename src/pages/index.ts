@@ -7,3 +7,4 @@ export {Event} from './event';
 export {Store} from './Store';
 export {StoreDetails} from './StoreDetails';
 export {Profile} from './profile';
+export {CouponPage} from './coupon';

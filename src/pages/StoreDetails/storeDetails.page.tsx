@@ -1,16 +1,13 @@
 import React from 'react';
 import {View} from 'react-native';
-import {
-  Header,
-  SectionImage,
-  CardUser,
-  FloatButton,
-  TextIntro,
-  Maps,
-} from '@/components';
+import {Header, SectionImage, CardUser, TextIntro} from '@/components';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 import * as S from './styles';
+
+interface IStoreDetailProps {
+  title: string;
+}
 
 const StoreDetails: React.FC = () => {
   return (
@@ -52,10 +49,7 @@ const StoreDetails: React.FC = () => {
           </S.TextDescribe>
         </S.ContentDescribe>
         <S.ContentDescribe>
-          <TextIntro title="Localização" />
-          <View style={{padding: 16}}>
-            <Maps />
-          </View>
+          <TextIntro title="Cupons" />
         </S.ContentDescribe>
       </S.Container>
     </>

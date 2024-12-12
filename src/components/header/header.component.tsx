@@ -26,7 +26,7 @@ const Header: React.FC<IHeaderProps> = ({
               />
             </TouchableOpacity>
           ) : (
-            <S.CardUser onPress={() => navigate('Profile')}>
+            <S.CardUser onPress={() => navigate('Profile' as never)}>
               <S.ImageUser
                 testID="user-image"
                 source={ExampleImg}

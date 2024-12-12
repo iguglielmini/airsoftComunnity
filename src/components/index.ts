@@ -13,3 +13,4 @@ export {Maps} from './maps';
 export {CheckboxCustom} from './checkbox';
 export {DatePickerCustom} from './datepicker';
 export {BadgeCustom} from './badge';
+export {Ticket} from './ticket';

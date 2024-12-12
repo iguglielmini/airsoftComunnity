@@ -19,7 +19,7 @@ const profile: React.FC = () => {
         </S.StatsDiv>
         <S.StatsDiv>
           <S.StatsTitle>3</S.StatsTitle>
-          <S.StatsText>Jogos/Peladas</S.StatsText>
+          <S.StatsText>Solicitações</S.StatsText>
         </S.StatsDiv>
         <S.StatsDiv>
           <S.StatsTitle>1</S.StatsTitle>

@@ -27,7 +27,7 @@ export const Badge = styled(View)`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   align-items: center;
-  background-color: ${theme.colors.primary.MAIN};
+  background-color: ${theme.colors.common.WHITE};
 `;
 
 export const ContentImage = styled(ImageBackground)`

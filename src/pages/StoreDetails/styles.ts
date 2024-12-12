@@ -24,8 +24,9 @@ export const ContentDescribe = styled(View)`
 `;
 
 export const IntroText = styled(Text)`
-  font-size: 18px;
-  color: ${theme.colors.primary.MAIN};
+  font-size: 21px;
+  font-weight: bold;
+  color: ${theme.colors.common.WHITE};
 `;
 
 export const IntroSubText = styled(Text)`
@@ -70,7 +71,7 @@ export const Divider = styled(View)`
   width: 100%;
   height: 1px;
   margin-top: 16px;
-  background-color: ${theme.colors.primary.MAIN};
+  background-color: ${theme.colors.info.WARNING};
 `;
 
 export const ContentContact = styled(View)`

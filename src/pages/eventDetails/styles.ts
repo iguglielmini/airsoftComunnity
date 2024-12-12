@@ -25,7 +25,8 @@ export const ContentDescribe = styled(View)`
 
 export const IntroText = styled(Text)`
   font-size: 18px;
-  color: ${theme.colors.primary.MAIN};
+  font-weight: bold;
+  color: ${theme.colors.common.WHITE};
 `;
 
 export const IntroSubText = styled(Text)`
@@ -38,7 +39,7 @@ export const TextPrice = styled(Text)`
   font-size: 21px;
   padding-top: 8px;
   font-weight: bold;
-  color: ${theme.colors.primary.MAIN};
+  color: ${theme.colors.info.WARNING};
 `;
 
 export const BoxRow = styled(View)`

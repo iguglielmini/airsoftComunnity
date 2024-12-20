@@ -13,7 +13,7 @@ export const SectionCard = styled(View)`
 `;
 
 export const TextSection = styled(Text)`
-  color: ${theme.colors.primary.MAIN};
+  color: ${theme.colors.common.WHITE};
   font-size: 21px;
   font-weight: 800;
   line-height: 26px;

@@ -68,6 +68,13 @@ const Home: React.FC = () => {
             calendario="26/11/23 - 12:00"
             detailsPress={() => navigate('EventDetails' as never)}
           />
+          <CardEvent
+            image={ImgTest2}
+            locationUF="PB"
+            titleEvent="Operação Lockdonw 4"
+            calendario="26/11/23 - 12:00"
+            detailsPress={() => navigate('EventDetails' as never)}
+          />
         </S.BoxH>
       </S.BoxV>
     </S.Container>

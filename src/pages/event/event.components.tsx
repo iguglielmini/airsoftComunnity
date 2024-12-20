@@ -36,7 +36,7 @@ const Event: React.FC = () => {
 
   return (
     <>
-      <Header title="Eventos" />
+      <Header title="Eventos de Airsoft" gobackIcon />
       <S.Container>
         <S.SectionCard>
           <S.TextSection>Eventos proximos</S.TextSection>

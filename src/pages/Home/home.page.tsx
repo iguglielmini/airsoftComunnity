@@ -29,7 +29,7 @@ const Home: React.FC = () => {
             label="Manutenção"
             icon="magazine-pistol"
             sizerIcon={60}
-            redirect={() => {}}
+            redirect={() => navigate('Maintenance' as never)}
           />
           <BadgeCustom
             label="Cupons"

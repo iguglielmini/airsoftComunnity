@@ -9,6 +9,7 @@ import {
   StoreDetails,
   Profile,
   CouponPage,
+  MaintenancePage,
 } from '@/pages';
 
 const {Navigator, Screen} = createStackNavigator();
@@ -23,6 +24,7 @@ const AppRoutes = () => {
       <Screen name="Store" component={Store} />
       <Screen name="StoreDetails" component={StoreDetails} />
       <Screen name="Coupon" component={CouponPage} />
+      <Screen name="Maintenance" component={MaintenancePage} />
     </Navigator>
   );
 };

@@ -14,3 +14,4 @@ export {CheckboxCustom} from './checkbox';
 export {DatePickerCustom} from './datepicker';
 export {BadgeCustom} from './badge';
 export {Ticket} from './ticket';
+export {CardGun} from './cardGun';

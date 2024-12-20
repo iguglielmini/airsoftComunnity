@@ -22,4 +22,5 @@ export const Badge = styled(TouchableOpacity)`
   height: 100px;
   align-items: center;
   justify-content: center;
+  margin: 10px 16px 10px 16px;
 `;
